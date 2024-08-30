@@ -1,12 +1,15 @@
 ﻿namespace BankAppData.Model
 {
-    public class Account
+    /// <summary>
+    /// AccountDB class
+    /// </summary>
+    public class AccountDB
     {
         public int Id { get; set; }
         public string AccountNumber { get; set; }
         public string Description { get; set; }
-        public int ClientId { get; set; }
+        public int CustomerId { get; set; }
 
-        public Client Client { get; set; }
+        public CustomerDB Client { get; set; }
     }
 }

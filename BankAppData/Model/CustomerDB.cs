@@ -1,6 +1,9 @@
 ﻿namespace BankAppData.Model
 {
-    public class Client
+    /// <summary>
+    /// Customer class to store customer information
+    /// </summary>
+    public class CustomerDB
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -12,9 +15,9 @@
         public string City { get; set; }
         public string Address { get; set; }
 
-        public ICollection<Account> Accounts { get; set; }
+        public ICollection<AccountDB> Accounts { get; set; }
 
-        public Client()
+        public CustomerDB()
         {
             Accounts = [];
         }
